@@ -1,30 +1,46 @@
-<!DOCTYPE html>
-    <html>
-        <head>
-            <link href="contact.css" type="text/css" rel="stylesheet">
-            <meta content="width=device-width, initial-scale=1" name="viewport" />
-        </head>
-        <header>
-                <ul>
-                    <li><a href='./index.html'>Home</a></li>
-                    <li>|</li>
-                    <li><a href='./Contact.html'>Contact Us</a></li>
-                </ul>
-            </header>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <title>JV Photography</title>
+  </head>
+    <nav class="nav nav-pills flex-column flex-sm-row">
+        <a class="flex-sm-fill text-sm-center nav-link" href="./index.html">Home</a>
+        <a class="flex-sm-fill text-sm-center nav-link active" href="./Contact.html">Contact Me</a>
+    </nav>      
+      </nav>
+      <br><br>
         <body>
-            <h1>Contact me for inquiries</h1>
-                <h3>Visit my social media pages</h3>
-            <form action="mailto:velisjoel@gmail.com" method="post" enctype="text/plain">
-                <fieldset>
-                    <legend>Enter your information below:</legend> 
-                    <br>
-                    <label for="Name">Name</label>
-                    <input type="text" id="name">
-                    <label for="email">E-Mail</label>
-                    <input type="email" id="email"> <br><br><br>
-                    <textarea rows="5" cols="60" placeholder="Message"></textarea><br>
-                    <input type="submit" value="Send Message">
-                </fieldset>
-            </form>
+            <h4 style="text-align: center">Contact me for inquiries</h1>
+                <h5 style="text-align: center">Visit my social media pages</h3>
+            <div class="container">
+            <form enctype="text/plain" method="GET" action="mailto:velisjoel@gmail.com"> 
+                    <div class="form-row">
+                      <div class="form-group col-md-12">
+                        <label for="inputName">Name</label>
+                        <input type="name" name="name" class="form-control" id="inputName" >
+                      </div>
+                      <div class="form-group col-md-12">
+                        <label for="inputEmail">E-Mail</label>
+                        <input type="email" name="email" class="form-control" id="inputEmail" >
+                      </div>
+                      <div class="form-group col-md-12">
+                        <label for="inputPhone">Phone</label>
+                        <input type="tel" name="phone" class="form-control" id="inputPhone" >
+                      </div>
+                      <div class="form-group col-md-12">
+                        <label for="inputMessage">Message</label>
+                        <textarea name="message" class="form-control" rows="3" id="inputMessage"></textarea>
+                      </div>
+                    </div>
+                    <input type="submit" class="btn btn-primary" value="Send Message">
+                  </form>
+            </div>
         </body>
     </html>
